@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 
 # 環境変数のロード
-# load_dotenv()  # デプロイ時に残しておいても問題ないらしい（あやしければ無効にする）
+load_dotenv()  # デプロイ時に残しておいても問題ないらしい（あやしければ無効にする）
 TEST_SECRET = os.getenv("TEST_SECRET")
 
 app = FastAPI()
